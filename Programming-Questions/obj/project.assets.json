@@ -7045,9 +7045,9 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "C:\\Users\\Prasanth\\source\\repos\\Programming-Questions\\Programming-Questions\\Programming-Questions.csproj",
-      "projectName": "Programming-Questions",
-      "projectPath": "C:\\Users\\Prasanth\\source\\repos\\Programming-Questions\\Programming-Questions\\Programming-Questions.csproj",
+      "projectUniqueName": "C:\\Users\\Prasanth\\source\\repos\\Programming-Questions\\Programming-Questions\\Programming_Questions.csproj",
+      "projectName": "Programming_Questions",
+      "projectPath": "C:\\Users\\Prasanth\\source\\repos\\Programming-Questions\\Programming-Questions\\Programming_Questions.csproj",
       "packagesPath": "C:\\Users\\Prasanth\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\Prasanth\\source\\repos\\Programming-Questions\\Programming-Questions\\obj\\",
       "projectStyle": "PackageReference",

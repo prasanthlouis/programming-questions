@@ -1,0 +1,10 @@
+C:\Users\Prasanth\source\repos\Programming-Questions\Programming-Questions\bin\Debug\netcoreapp1.1\Programming_Questions.deps.json
+C:\Users\Prasanth\source\repos\Programming-Questions\Programming-Questions\bin\Debug\netcoreapp1.1\Programming_Questions.runtimeconfig.json
+C:\Users\Prasanth\source\repos\Programming-Questions\Programming-Questions\bin\Debug\netcoreapp1.1\Programming_Questions.runtimeconfig.dev.json
+C:\Users\Prasanth\source\repos\Programming-Questions\Programming-Questions\obj\Debug\netcoreapp1.1\Programming_Questions.csproj.CoreCompileInputs.cache
+C:\Users\Prasanth\source\repos\Programming-Questions\Programming-Questions\obj\Debug\netcoreapp1.1\Programming_Questions.AssemblyInfo.cs
+C:\Users\Prasanth\source\repos\Programming-Questions\Programming-Questions\bin\Debug\netcoreapp1.1\Programming_Questions.dll
+C:\Users\Prasanth\source\repos\Programming-Questions\Programming-Questions\bin\Debug\netcoreapp1.1\Programming_Questions.pdb
+C:\Users\Prasanth\source\repos\Programming-Questions\Programming-Questions\obj\Debug\netcoreapp1.1\Programming_Questions.csprojResolveAssemblyReference.cache
+C:\Users\Prasanth\source\repos\Programming-Questions\Programming-Questions\obj\Debug\netcoreapp1.1\Programming_Questions.dll
+C:\Users\Prasanth\source\repos\Programming-Questions\Programming-Questions\obj\Debug\netcoreapp1.1\Programming_Questions.pdb

@@ -16,12 +16,13 @@ namespace Programming_Questions
 
         internal void Solution()
         {
-            Console.WriteLine("Solution 1:");
+            Console.WriteLine("Solution 1: Find the k largest or smallest in an array");
              Array.Sort(_numbers);
             for(int i = 0; i < _limit; i++)
             {
                 Console.Write(_numbers[i]);
             };
+            Console.WriteLine();
         }
     }
 }
