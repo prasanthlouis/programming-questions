@@ -22,6 +22,16 @@ namespace Programming_Questions
             noTriplet.Solution();
             Console.WriteLine();
 
+            //Problem 3
+            //Convert a binary tree into a doubly link list
+            var binaryTree = new BinaryTree(10);
+            binaryTree.left = new BinaryTree(12);
+            binaryTree.left.left = new BinaryTree(25);
+            binaryTree.left.right = new BinaryTree(30);
+            binaryTree.right = new BinaryTree(15);
+            binaryTree.right.left = new BinaryTree(36);
+            var convertBinaryTreeToDll = new ConvertBinaryTreeToDll();
+            convertBinaryTreeToDll.MakeADLL(binaryTree);
             Console.ReadLine();
         }
     }
