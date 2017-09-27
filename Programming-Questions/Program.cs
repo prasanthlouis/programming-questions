@@ -35,16 +35,27 @@ namespace Programming_Questions
 
             //Problem 4
             //Find LCA of a BST
-            var lcaBinaryTree = new BinaryTree(20);
-            lcaBinaryTree.left = new BinaryTree(8);
-            lcaBinaryTree.left.left = new BinaryTree(4);
-            lcaBinaryTree.left.right = new BinaryTree(12);
-            lcaBinaryTree.left.right.left = new BinaryTree(10);
-            lcaBinaryTree.left.right.right = new BinaryTree(14);
-            lcaBinaryTree.right = new BinaryTree(22);
+            var lcaBinarySTree = new BinaryTree(20);
+            lcaBinarySTree.left = new BinaryTree(8);
+            lcaBinarySTree.left.left = new BinaryTree(4);
+            lcaBinarySTree.left.right = new BinaryTree(12);
+            lcaBinarySTree.left.right.left = new BinaryTree(10);
+            lcaBinarySTree.left.right.right = new BinaryTree(14);
+            lcaBinarySTree.right = new BinaryTree(22);
             var lcabst = new LCABST();
-            lcabst.FindLCA(lcaBinaryTree, 10, 14);
+            lcabst.FindLCA(lcaBinarySTree, 10, 14);
 
+            //Problem 5
+            //Find LCA of a BT
+            var lcaBinaryTree = new BinaryTree(1);
+            lcaBinaryTree.left = new BinaryTree(2);
+            lcaBinaryTree.left.left = new BinaryTree(4);
+            lcaBinaryTree.left.right = new BinaryTree(5);
+            lcaBinaryTree.right = new BinaryTree(3);
+            lcaBinaryTree.right.left = new BinaryTree(6);
+            lcaBinaryTree.right.right = new BinaryTree(7);
+            var lcabt = new LCABT();
+            lcabt.FindLCA(lcaBinaryTree, 4, 7);
             Console.ReadLine();
         }
     }
