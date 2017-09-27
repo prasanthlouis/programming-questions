@@ -32,6 +32,19 @@ namespace Programming_Questions
             binaryTree.right.left = new BinaryTree(36);
             var convertBinaryTreeToDll = new ConvertBinaryTreeToDll();
             convertBinaryTreeToDll.MakeADLL(binaryTree);
+
+            //Problem 4
+            //Find LCA of a BST
+            var lcaBinaryTree = new BinaryTree(20);
+            lcaBinaryTree.left = new BinaryTree(8);
+            lcaBinaryTree.left.left = new BinaryTree(4);
+            lcaBinaryTree.left.right = new BinaryTree(12);
+            lcaBinaryTree.left.right.left = new BinaryTree(10);
+            lcaBinaryTree.left.right.right = new BinaryTree(14);
+            lcaBinaryTree.right = new BinaryTree(22);
+            var lcabst = new LCABST();
+            lcabst.FindLCA(lcaBinaryTree, 10, 14);
+
             Console.ReadLine();
         }
     }
