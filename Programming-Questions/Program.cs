@@ -7,6 +7,7 @@ namespace Programming_Questions
     {
         static void Main(string[] args)
         {
+            //------------- Amazon ----------------//
             Problem1();
             Problem2();
             Problem3();
@@ -14,13 +15,18 @@ namespace Programming_Questions
             Problem5();
             Problem6();
             Problem7();
+            Problem8();
+
+            //------------- Microsoft ----------------//
 
             Console.ReadLine();
         }
 
         private static void Problem8()
         {
-            throw new NotImplementedException();
+            //Problem 8
+            //Rotate a matrix by 90 degrees
+            
         }
 
         private static void Problem7()
