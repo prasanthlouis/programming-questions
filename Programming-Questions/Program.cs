@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace Programming_Questions
 {
@@ -56,6 +57,13 @@ namespace Programming_Questions
             lcaBinaryTree.right.right = new BinaryTree(7);
             var lcabt = new LCABT();
             lcabt.FindLCA(lcaBinaryTree, 4, 7);
+
+            //Problem 6
+            //Implement a special stack with GetMin() with operation of O(1)
+            var stack = new Stack<int>();
+            var secondStack = new Stack<int>();
+            var getMinStack = new GetMinStack();
+            getMinStack.PerformOperations(stack, secondStack);
             Console.ReadLine();
         }
     }
