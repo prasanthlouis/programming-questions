@@ -18,13 +18,19 @@ namespace Programming_Questions
             AmazonProblem6();
             AmazonProblem7();
             AmazonProblem8();
-            Console.WriteLine();
 
             //------------- Microsoft ----------------//
             Console.WriteLine("Microsoft's most asked questions");
             MicrosoftProblem1();
+            MicrosoftProblem2();
 
             Console.ReadLine();
+        }
+
+        private static void MicrosoftProblem2()
+        {
+            var removeString = new RemoveDuplicatesInAStringInPlace();
+            removeString.RemoveDuplicates();
         }
 
         private static void MicrosoftProblem1()
