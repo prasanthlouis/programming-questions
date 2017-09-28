@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Programming_Questions.Microsoft;
+using System;
 using System.Collections.Generic;
 
 namespace Programming_Questions
@@ -8,28 +9,40 @@ namespace Programming_Questions
         static void Main(string[] args)
         {
             //------------- Amazon ----------------//
-            Problem1();
-            Problem2();
-            Problem3();
-            Problem4();
-            Problem5();
-            Problem6();
-            Problem7();
-            Problem8();
+            Console.WriteLine("Amazon's most asked questions");
+            AmazonProblem1();
+            AmazonProblem2();
+            AmazonProblem3();
+            AmazonProblem4();
+            AmazonProblem5();
+            AmazonProblem6();
+            AmazonProblem7();
+            AmazonProblem8();
+            Console.WriteLine();
 
             //------------- Microsoft ----------------//
+            Console.WriteLine("Microsoft's most asked questions");
+            MicrosoftProblem1();
 
             Console.ReadLine();
         }
 
-        private static void Problem8()
+        private static void MicrosoftProblem1()
+        {
+            //Problem 1
+            //Check if a binary tree is BST or not
+            var binaryTree = new BTisBinarySearchTreeOrNot();
+            binaryTree.CheckIfItsBst();
+        }
+
+        private static void AmazonProblem8()
         {
             //Problem 8
             //Rotate a matrix by 90 degrees
             
         }
 
-        private static void Problem7()
+        private static void AmazonProblem7()
         {
             //Problem 7
             //Implement reversing a link list in groups of (k)
@@ -38,7 +51,7 @@ namespace Programming_Questions
 
         }
 
-        private static void Problem6()
+        private static void AmazonProblem6()
         {
             //Problem 6
             //Implement a special stack with GetMin() with operation of O(1)
@@ -48,7 +61,7 @@ namespace Programming_Questions
             getMinStack.PerformOperations(stack, secondStack);
         }
 
-        private static void Problem5()
+        private static void AmazonProblem5()
         {
             //Problem 5
             //Find LCA of a BT
@@ -63,7 +76,7 @@ namespace Programming_Questions
             lcabt.FindLCA(lcaBinaryTree, 4, 7);
         }
 
-        private static void Problem4()
+        private static void AmazonProblem4()
         {
             //Problem 4
             //Find LCA of a BST
@@ -78,7 +91,7 @@ namespace Programming_Questions
             lcabst.FindLCA(lcaBinarySTree, 10, 14);
         }
 
-        private static void Problem3()
+        private static void AmazonProblem3()
         {
             //Problem 3
             //Convert a binary tree into a doubly link list
@@ -92,7 +105,7 @@ namespace Programming_Questions
             convertBinaryTreeToDll.MakeADLL(binaryTree);
         }
 
-        private static void Problem2()
+        private static void AmazonProblem2()
         {
             //Problem 2
             //Find a triplet. If found, print true else print false
@@ -101,7 +114,7 @@ namespace Programming_Questions
             Console.WriteLine();
         }
 
-        private static void Problem1()
+        private static void AmazonProblem1()
         {
             //Problem 1
             //Find the k largest or smallest in an array
