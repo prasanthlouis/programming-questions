@@ -20,11 +20,19 @@ namespace Programming_Questions
             AmazonProblem8();
 
             //------------- Microsoft ----------------//
+            Console.WriteLine();
             Console.WriteLine("Microsoft's most asked questions");
             MicrosoftProblem1();
             MicrosoftProblem2();
             MicrosoftProblem3();
+            MicrosoftProblem4();
             Console.ReadLine();
+        }
+
+        private static void MicrosoftProblem4()
+        {
+            var printLastLines = new PrintLastNLine();
+            printLastLines.PrintLastNLines();
         }
 
         private static void MicrosoftProblem3()

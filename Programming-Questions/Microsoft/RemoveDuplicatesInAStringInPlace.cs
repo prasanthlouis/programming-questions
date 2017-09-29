@@ -25,6 +25,7 @@ namespace Programming_Questions.Microsoft
             {
                 Console.Write(character);
             }
+            Console.WriteLine();
         }
     }
 }
