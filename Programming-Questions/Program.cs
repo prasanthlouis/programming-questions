@@ -23,8 +23,14 @@ namespace Programming_Questions
             Console.WriteLine("Microsoft's most asked questions");
             MicrosoftProblem1();
             MicrosoftProblem2();
-
+            MicrosoftProblem3();
             Console.ReadLine();
+        }
+
+        private static void MicrosoftProblem3()
+        {
+            var sortedArray = new SearchForElementInRotatedArray();
+            sortedArray.FindElementInRotatedArray();
         }
 
         private static void MicrosoftProblem2()
