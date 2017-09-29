@@ -1,4 +1,5 @@
-﻿using Programming_Questions.Microsoft;
+﻿using Programming_Questions.Amazon;
+using Programming_Questions.Microsoft;
 using System;
 using System.Collections.Generic;
 
@@ -8,139 +9,13 @@ namespace Programming_Questions
     {
         static void Main(string[] args)
         {
-            //------------- Amazon ----------------//
-            Console.WriteLine("Amazon's most asked questions");
-            AmazonProblem1();
-            AmazonProblem2();
-            AmazonProblem3();
-            AmazonProblem4();
-            AmazonProblem5();
-            AmazonProblem6();
-            AmazonProblem7();
-            AmazonProblem8();
-
-            //------------- Microsoft ----------------//
-            Console.WriteLine();
-            Console.WriteLine("Microsoft's most asked questions");
-            MicrosoftProblem1();
-            MicrosoftProblem2();
-            MicrosoftProblem3();
-            MicrosoftProblem4();
+            //Uncomment lines to see outputs
+            //var amazon = new AmazonProblems();
+            var microsoft = new MicrosoftProblems();
             Console.ReadLine();
         }
 
-        private static void MicrosoftProblem4()
-        {
-            var printLastLines = new PrintLastNLine();
-            printLastLines.PrintLastNLines();
-        }
+       
 
-        private static void MicrosoftProblem3()
-        {
-            var sortedArray = new SearchForElementInRotatedArray();
-            sortedArray.FindElementInRotatedArray();
-        }
-
-        private static void MicrosoftProblem2()
-        {
-            var removeString = new RemoveDuplicatesInAStringInPlace();
-            removeString.RemoveDuplicates();
-        }
-
-        private static void MicrosoftProblem1()
-        {
-            //Problem 1
-            //Check if a binary tree is BST or not
-            var binaryTree = new BTisBinarySearchTreeOrNot();
-            binaryTree.CheckIfItsBst();
-        }
-
-        private static void AmazonProblem8()
-        {
-            //Problem 8
-            //Rotate a matrix by 90 degrees
-            
-        }
-
-        private static void AmazonProblem7()
-        {
-            //Problem 7
-            //Implement reversing a link list in groups of (k)
-           var reverseLinkList = new LinkList();
-            reverseLinkList.ReverseLinkListInGroupsOfKS();
-
-        }
-
-        private static void AmazonProblem6()
-        {
-            //Problem 6
-            //Implement a special stack with GetMin() with operation of O(1)
-            var stack = new Stack<int>();
-            var secondStack = new Stack<int>();
-            var getMinStack = new GetMinStack();
-            getMinStack.PerformOperations(stack, secondStack);
-        }
-
-        private static void AmazonProblem5()
-        {
-            //Problem 5
-            //Find LCA of a BT
-            var lcaBinaryTree = new BinaryTree(1);
-            lcaBinaryTree.left = new BinaryTree(2);
-            lcaBinaryTree.left.left = new BinaryTree(4);
-            lcaBinaryTree.left.right = new BinaryTree(5);
-            lcaBinaryTree.right = new BinaryTree(3);
-            lcaBinaryTree.right.left = new BinaryTree(6);
-            lcaBinaryTree.right.right = new BinaryTree(7);
-            var lcabt = new LCABT();
-            lcabt.FindLCA(lcaBinaryTree, 4, 7);
-        }
-
-        private static void AmazonProblem4()
-        {
-            //Problem 4
-            //Find LCA of a BST
-            var lcaBinarySTree = new BinaryTree(20);
-            lcaBinarySTree.left = new BinaryTree(8);
-            lcaBinarySTree.left.left = new BinaryTree(4);
-            lcaBinarySTree.left.right = new BinaryTree(12);
-            lcaBinarySTree.left.right.left = new BinaryTree(10);
-            lcaBinarySTree.left.right.right = new BinaryTree(14);
-            lcaBinarySTree.right = new BinaryTree(22);
-            var lcabst = new LCABST();
-            lcabst.FindLCA(lcaBinarySTree, 10, 14);
-        }
-
-        private static void AmazonProblem3()
-        {
-            //Problem 3
-            //Convert a binary tree into a doubly link list
-            var binaryTree = new BinaryTree(10);
-            binaryTree.left = new BinaryTree(12);
-            binaryTree.left.left = new BinaryTree(25);
-            binaryTree.left.right = new BinaryTree(30);
-            binaryTree.right = new BinaryTree(15);
-            binaryTree.right.left = new BinaryTree(36);
-            var convertBinaryTreeToDll = new ConvertBinaryTreeToDll();
-            convertBinaryTreeToDll.MakeADLL(binaryTree);
-        }
-
-        private static void AmazonProblem2()
-        {
-            //Problem 2
-            //Find a triplet. If found, print true else print false
-            var triplet = new CheckForTriplet(new int[] { 5, 8, 9, 2, 4, 3 });
-            triplet.Solution();
-            Console.WriteLine();
-        }
-
-        private static void AmazonProblem1()
-        {
-            //Problem 1
-            //Find the k largest or smallest in an array
-            var kLargest_SmallestInAnArray = new KLargest_SmallestInAnArray(new int[] { 3, 6, 7, 8, 4, 5, 2, 1, 0, 9 }, 5);
-            kLargest_SmallestInAnArray.Solution();
-            Console.WriteLine();
-        }
     }
 }
