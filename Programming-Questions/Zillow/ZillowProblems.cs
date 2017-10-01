@@ -16,6 +16,13 @@ namespace Programming_Questions.Zillow
             ZillowProblem3();
             ZillowProblem4();
             ZillowProblem5();
+            ZillowProblem6();
+        }
+
+        private void ZillowProblem6()
+        {
+            var fib = new Fibnonacci();
+            fib.PrintFibonacci();
         }
 
         private void ZillowProblem5()
