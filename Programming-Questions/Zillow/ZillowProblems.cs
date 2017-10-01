@@ -15,6 +15,13 @@ namespace Programming_Questions.Zillow
             ZillowProblem2();
             ZillowProblem3();
             ZillowProblem4();
+            ZillowProblem5();
+        }
+
+        private void ZillowProblem5()
+        {
+            var reverseANumber = new ReverseANumber();
+            reverseANumber.Reverse();
         }
 
         private void ZillowProblem4()
