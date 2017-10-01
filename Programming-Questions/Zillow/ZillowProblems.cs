@@ -14,6 +14,13 @@ namespace Programming_Questions.Zillow
             ZillowProblem1();
             ZillowProblem2();
             ZillowProblem3();
+            ZillowProblem4();
+        }
+
+        private void ZillowProblem4()
+        {
+            var lcabst = new FindLCAOfBinaryTree();
+            lcabst.FindLowestCA();
         }
 
         private void ZillowProblem3()
