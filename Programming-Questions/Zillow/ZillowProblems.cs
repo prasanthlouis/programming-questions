@@ -17,6 +17,13 @@ namespace Programming_Questions.Zillow
             ZillowProblem4();
             ZillowProblem5();
             ZillowProblem6();
+            ZillowProblem7();
+        }
+
+        private void ZillowProblem7()
+        {
+            var blackJack = new BlackJack();
+            blackJack.Calculate();
         }
 
         private void ZillowProblem6()
