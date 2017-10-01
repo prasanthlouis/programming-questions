@@ -13,6 +13,13 @@ namespace Programming_Questions.Zillow
             Console.WriteLine("Zillow's most asked questions");
             ZillowProblem1();
             ZillowProblem2();
+            ZillowProblem3();
+        }
+
+        private void ZillowProblem3()
+        {
+            var validP = new ValidParentheses();
+            validP.DoesItHaveValidP();
         }
 
         private void ZillowProblem2()
