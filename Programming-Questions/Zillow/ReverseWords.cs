@@ -8,6 +8,8 @@ namespace Programming_Questions.Zillow
     {
         internal void ReverseThisSentence()
         {
+            Console.WriteLine();
+            Console.WriteLine($"Problem 1: Reverse a sentence");
             var sentence = "This is a sentence. Please reverse it";
             var splittedSentence = sentence.Split(' ');
             for(int i = splittedSentence.Length - 1; i >= 0; i--)

@@ -8,7 +8,17 @@ namespace Programming_Questions.Zillow
     {
         public ZillowProblems()
         {
+            //------------- Zillow ----------------//
+            Console.WriteLine();
+            Console.WriteLine("Zillow's most asked questions");
             ZillowProblem1();
+            ZillowProblem2();
+        }
+
+        private void ZillowProblem2()
+        {
+            var rootToLeafSum = new RootToLeafSum();
+            rootToLeafSum.SeeIfTheresAPath();
         }
 
         private void ZillowProblem1()
