@@ -10,7 +10,6 @@ namespace Programming_Questions.Zillow
         {
             Console.WriteLine();
             Console.WriteLine($"Problem 7: Let's play some BlackJack!");
-            Console.WriteLine();
             char[] cards = new char[] { 'A','2' };
             char[] cardsThatHaveBeenPlayed = new char[cards.Length];
             int sum = 0;

@@ -18,6 +18,20 @@ namespace Programming_Questions.Zillow
             ZillowProblem5();
             ZillowProblem6();
             ZillowProblem7();
+            ZillowProblem8();
+            ZillowProblem9();
+        }
+
+        private void ZillowProblem9()
+        {
+            var trinary = new TrinaryTree();
+            trinary.PerformTraversal();
+        }
+
+        private void ZillowProblem8()
+        {
+            var convertStringToInt = new StringToIntWithException();
+            convertStringToInt.Convert();
         }
 
         private void ZillowProblem7()
