@@ -20,6 +20,15 @@ namespace Programming_Questions.Amazon
             AmazonProblem8();
             AmazonProblem9();
             AmazonProblem10();
+            AmazonProblem11();
+        }
+
+        private void AmazonProblem11()
+        {
+            //Problem 11
+            //Highest power of 2 less than or equal to given number
+            var power = new HighestPowerOf2();
+            power.FindHighestPowerOf2();
         }
 
         private void AmazonProblem10()
