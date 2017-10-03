@@ -19,7 +19,15 @@ namespace Programming_Questions.Amazon
             AmazonProblem7();
             AmazonProblem8();
             AmazonProblem9();
+            AmazonProblem10();
+        }
 
+        private void AmazonProblem10()
+        {
+            //Problem 10
+            //Replace every element with greatest element on the right side
+            var element = new ReplaceRightGreatestElemet();
+            element.ReplaceRightGreatest();
         }
 
         private void AmazonProblem9()
