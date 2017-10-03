@@ -11,9 +11,9 @@ namespace Programming_Questions
         static void Main(string[] args)
         {
             //Uncomment lines to see outputs
-            //var amazon = new AmazonProblems();
+            var amazon = new AmazonProblems();
             //var microsoft = new MicrosoftProblems();
-            var zillow = new ZillowProblems();
+            //var zillow = new ZillowProblems();
             Console.ReadLine();
         }
 

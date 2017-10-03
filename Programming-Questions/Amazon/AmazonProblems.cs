@@ -24,8 +24,9 @@ namespace Programming_Questions.Amazon
         private static void AmazonProblem8()
         {
             //Problem 8
-            //Rotate a matrix by 90 degrees
-
+            //Count total set bits in all numbers from 1 to n
+            var setbits = new TotalSetBits1toN();
+            setbits.CountTotalSetBits();
         }
 
         private static void AmazonProblem7()
