@@ -18,7 +18,16 @@ namespace Programming_Questions.Amazon
             AmazonProblem6();
             AmazonProblem7();
             AmazonProblem8();
+            AmazonProblem9();
 
+        }
+
+        private void AmazonProblem9()
+        {
+            //Problem 9
+            //Number of subsequences of the form a^ib^jc^k
+            var subs = new Subsequences();
+            subs.FindNumberOfSubsequences();
         }
 
         private static void AmazonProblem8()
