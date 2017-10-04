@@ -21,6 +21,15 @@ namespace Programming_Questions.Amazon
             AmazonProblem9();
             AmazonProblem10();
             AmazonProblem11();
+            AmazonProblem12();
+        }
+
+        private void AmazonProblem12()
+        {
+            //Problem 12
+            //Count all possible paths from top left to bottom right of a mXn matrix
+            var pathMatrix = new PossiblePathMatrix();
+            pathMatrix.FindPossiblePaths();
         }
 
         private void AmazonProblem11()
