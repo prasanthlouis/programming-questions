@@ -24,6 +24,15 @@ namespace Programming_Questions.Amazon
             AmazonProblem12();
             AmazonProblem13();
             AmazonProblem14();
+            AmazonProblem15();
+        }
+
+        private void AmazonProblem15()
+        {
+            //Problem 15
+            //Given only a pointer/reference to a node to be deleted in a singly linked list, how do you delete it?
+            var pointer = new PointerLinkListDelete();
+            pointer.DeleteNode();
         }
 
         private void AmazonProblem14()
