@@ -23,6 +23,16 @@ namespace Programming_Questions.Amazon
             AmazonProblem11();
             AmazonProblem12();
             AmazonProblem13();
+            AmazonProblem14();
+        }
+
+        private void AmazonProblem14()
+        {
+            //Problem 14
+            //Given a binary string, count number of substrings that start and end with 1
+            var binaryString = new BinarySubString();
+            binaryString.CountNumberOfStrings();
+
         }
 
         private void AmazonProblem13()
