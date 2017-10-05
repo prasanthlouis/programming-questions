@@ -22,6 +22,15 @@ namespace Programming_Questions.Amazon
             AmazonProblem10();
             AmazonProblem11();
             AmazonProblem12();
+            AmazonProblem13();
+        }
+
+        private void AmazonProblem13()
+        {
+            //Problem 13
+            //Find a pair with maximum product in array of Integers
+            var productOfIntegers = new MaximumProductOfIntegers();
+            productOfIntegers.FindMaximumProduct();
         }
 
         private void AmazonProblem12()
