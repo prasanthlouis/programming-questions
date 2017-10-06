@@ -25,6 +25,12 @@ namespace Programming_Questions.Amazon
             AmazonProblem13();
             AmazonProblem14();
             AmazonProblem15();
+            AmazonProblem16();
+        }
+
+        private void AmazonProblem16()
+        {
+            throw new NotImplementedException();
         }
 
         private void AmazonProblem15()
