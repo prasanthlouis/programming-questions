@@ -1,0 +1,26 @@
+using System;
+using System.Collections.Generic;
+					
+public class Program
+{
+	public static void Main()
+	{
+		var input =  new List<int>{1, 2, 3, 4, 3};
+		var min = Matrix(input, 1, 4);	
+		Console.WriteLine(min);
+	}
+	
+	public static int Matrix(List<int> input, int i, int j){
+		if(i == j)
+			return 0;
+		int min = int.MaxValue;
+		for(int k = i; k < j ; k++)
+		{
+			int count = Matrix(input, i, k) + Matrix(input, k+1, j) + input[i-1] * input[k] * input[j];
+			if(count < min)
+				min = count;
+		}
+		
+		return min;
+	}
+}
