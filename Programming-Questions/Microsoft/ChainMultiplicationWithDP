@@ -1,0 +1,39 @@
+using System;
+using System.Collections.Generic;
+					
+public class Program
+{
+	public static void Main()
+	{
+		var input =  new List<int>{1, 2, 3, 4, 3};
+		var min = Matrix(input, 1, 4);	
+		Console.WriteLine(min);
+	}
+	
+	public static int Matrix(List<int> input, int i, int j){
+		var m = new int[5,5];
+		for(int z =0; z < 5; z++)
+		{
+			m[i,i] = 0;
+		}
+		for(int l = 2;l<5;l++)
+		{
+			for(i=1;i<5-l+1;i++)
+			{
+				j = i+l-1;
+				m[i,j] = 9999999;
+				for(int k=i;k<j;k++)
+				{
+					
+					var c = m[i,k] + m[k+1,j] + input[i-1] * input[k] * input[j];
+					if(c < m[i,j])
+					{
+						m[i,j] = c;
+					}
+				}
+			}
+		}
+		return m[1, 4];
+	}
+	
+}
