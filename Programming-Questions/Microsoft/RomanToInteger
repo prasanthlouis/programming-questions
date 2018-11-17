@@ -1,0 +1,57 @@
+public class Solution {
+    public int RomanToInt(string s) {
+        int count = 0;
+        for(int i = 0; i < s.Length ; i++)
+        {
+            var letter = s[i];
+            switch(letter){
+                case 'I': count += 1;
+                    if(i + 1 < s.Length && s[i+1] == 'V')
+                    {
+                        i++;
+                        count += 3;
+                    }
+                    else if(i+1 < s.Length && s[i+1] == 'X')
+                    {
+                        i++;
+                        count +=8;
+                    }
+                    break;
+                case 'V': count +=5;
+                    break;
+                case 'X': count += 10;
+                    if(i + 1 < s.Length && s[i+1] == 'L')
+                    {
+                        i++;
+                        count += 30;
+                    }
+                    else if(i+1 < s.Length && s[i+1] == 'C')
+                    {
+                        i++;
+                        count +=80;
+                    }
+                    break;
+                case 'L': count += 50;
+                    break;
+                case 'C':count += 100;
+                    if(i + 1 < s.Length && s[i+1] == 'D')
+                    {
+                        i++;
+                        count += 300;
+                    }
+                    else if(i+1 < s.Length && s[i+1] == 'M')
+                    {
+                        i++;
+                        count +=800;
+                    }
+                    break;
+                case 'D': count += 500;
+                    break;
+                case 'M': count += 1000;
+                    break;
+                    
+            }
+        }
+        return count;
+    }
+}
