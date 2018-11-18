@@ -1,0 +1,23 @@
+public class Solution {
+    public int[] DiStringMatch(string S) {
+        var answer = new List<int>();
+        var s = S.ToCharArray();
+        answer.Add(0);
+        for(int i = 0; i < s.Count() ; i ++)
+        {
+            if(s[i] == 'I')
+            {
+                answer.Add(i+1);
+            }
+            else{
+                answer.Add(0);
+                for(int j = 0; j <= i;j++)
+                {
+                    answer[j] += 1;
+                }
+            }
+        }
+        return answer.ToArray();
+    }
+    
+}
