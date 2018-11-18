@@ -1,0 +1,16 @@
+public class Solution {
+    public bool ValidMountainArray(int[] A) {
+        var list = A.ToList();
+        var count = 0;
+        int i =0;
+        while(i+1 < A.Count() && list[i] < list[i+1])
+            i++;
+        if(i == 0 || i == A.Count() - 1)
+            return false;
+        while(i+1 < A.Count() && list[i] > list[i+1])
+            i++;
+        if(i != A.Count() - 1)
+            return false;
+            return true;
+    }
+}
