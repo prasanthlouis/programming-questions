@@ -1,0 +1,25 @@
+using System.Collections.Generic;
+public class Solution {
+    public string RemoveKdigits(string num, int k) {
+        var copy = k;
+       var stack = new char[num.Length];
+        if(k == num.Length)
+            return "0";
+       var top = 0;
+        for(int i = 0; i< num.Length; i++)
+        {
+            while(top > 0 && num[i] < stack[top-1] && k > 0)
+            {
+                top = top- 1;
+                k = k -1;
+            }
+
+            stack[top++] = num[i];
+        }
+        int idx = 0;
+        
+        while (idx < num.Length - copy && stack[idx] == '0') idx++;
+
+        return idx == num.Length - copy? "0": new String(stack, idx, num.Length - copy - idx);
+        
+    }}
