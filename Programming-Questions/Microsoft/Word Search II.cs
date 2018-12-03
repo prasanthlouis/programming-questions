@@ -34,37 +34,20 @@ public class Solution {
             answerList.Add(word);
             return;
         }
-        if(i+1 < globalLength && count < word.Length && board[i+1,j] == word[count] && !burnBoard[i+1,j])
-        {
-            count++;
-            burnBoard[i+1,j] = true;
-            Recurse(board, i+1, j, word, count, burnBoard);
-            count--;
-            burnBoard[i+1,j] = false;
-        }
-         if(i-1 >= 0 && count < word.Length && board[i-1, j] == word[count] && !burnBoard[i-1,j])
-        {
-            count++;
-            burnBoard[i-1,j] = true;
-            Recurse(board, i-1, j, word, count,burnBoard);
-             count--;
-                 burnBoard[i-1,j] = false;
-        }
-         if(j+1 < globalHeight && count < word.Length && board[i, j+1] == word[count] && !burnBoard[i,j+1])
-        {
-            count++;
-            burnBoard[i,j+1] = true;
-            Recurse(board, i, j+1, word, count,burnBoard);
-             count--;
-                 burnBoard[i,j+1] = false;
-        }
-         if(j-1 >= 0 && count < word.Length &&  board[i, j-1] == word[count] && !burnBoard[i,j-1])
-        {
-            count++;
-            burnBoard[i,j-1] = true;
-            Recurse(board, i, j-1, word, count,burnBoard);
-             count--;
-                 burnBoard[i,j-1] = false;
-        }
+            Helper(board, count, i+1, j, burnBoard, word);
+            Helper(board, count, i-1, j, burnBoard, word);
+            Helper(board, count, i, j+1, burnBoard, word);
+            Helper(board, count, i, j-1, burnBoard, word);
+    }
+    public void Helper(char[,] board, int count, int i, int j, bool[,] burnBoard, string word)
+    {
+      if(i < globalLength && j < globalHeight && i >= 0 && j>=0 && count < word.Length && board[i,j] == word[count] && !burnBoard[i,j])
+      {
+        count++;
+        burnBoard[i,j] = true;
+        Recurse(board, i, j, word, count, burnBoard);
+        count--;
+        burnBoard[i,j] = false;
+      }
     }
 }
