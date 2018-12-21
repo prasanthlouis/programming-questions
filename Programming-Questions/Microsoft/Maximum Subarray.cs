@@ -11,3 +11,18 @@ public class Solution {
         
     }
 }
+//DP Solution
+public class Solution {
+    public int MaxSubArray(int[] nums) {
+        var maxSoFar = nums[0];
+        var dp = new int[nums.Count()];
+        dp[0] = nums[0];
+        for(int i = 1; i < nums.Count(); i++)
+        {
+            dp[i] = nums[i] + (dp[i-1] > 0  ? dp[i-1]  : 0);
+            maxSoFar = Math.Max(dp[i], maxSoFar);
+        }
+        return maxSoFar;
+        
+    }
+}
