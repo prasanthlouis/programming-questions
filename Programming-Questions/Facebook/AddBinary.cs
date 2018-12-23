@@ -1,3 +1,38 @@
+
+public class Solution {
+    int carry = 0;
+    public string AddBinary(string a, string b) {
+        var startingA = a.Length - 1;
+        var startingB = b.Length - 1;
+        var stringBuilder = new StringBuilder();
+        int carry = 0;
+        int sum = 0;
+        while(startingA >= 0 || startingB >= 0)
+        {
+            sum = carry;
+            if(startingA >= 0)
+            {
+                sum += a[startingA--] - '0';
+            }
+            if(startingB >= 0)
+            {
+                sum += b[startingB--] - '0';
+            }
+            stringBuilder.Insert(0, sum % 2);
+            carry = sum / 2;
+        }
+        if(carry != 0)
+        {
+            stringBuilder.Insert(0, carry);
+        }
+        return stringBuilder.ToString();
+    }
+    
+
+}
+
+
+
 public class Solution {
     int carry = 0;
     public string AddBinary(string a, string b) {
