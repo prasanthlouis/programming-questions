@@ -1,3 +1,26 @@
+//BIt shorter
+public class Solution {
+    public int[] PlusOne(int[] digits) {
+        for(int i = digits.Count() - 1 ; i >= 0 ; i--)
+        {
+            if(digits[i] < 9)
+            {
+                digits[i]++;
+                return digits;
+            }
+            digits[i] = 0;
+        }
+        var newInteger = new int[digits.Count() + 1];
+        for(int i = digits.Count() - 1 ; i >= 0 ; i--)
+        {
+            newInteger[i]  = digits[i];
+        }
+        newInteger[0] = 1;
+        return newInteger;
+    }
+}
+
+//My own
 public class Solution {
     public int[] PlusOne(int[] digits) {
         int length = digits.Count() - 1;
