@@ -1,3 +1,53 @@
+//Second Solution
+
+public class Solution {
+    
+    public void GameOfLife(int[][] board) {
+        int length = board.GetLength(0);
+        int columns = board[0].GetLength(0);
+        for(int i = 0 ; i < length ; i++)
+        {
+            for(int j = 0 ; j < columns ; j++)
+            {
+               int lives = CountNumberOfLives(board, i, j, length, columns); 
+               //Console.WriteLine(lives);
+               if(board[i][j] == 1 && (lives == 2 || lives == 3))
+               {
+                   board[i][j] = 3;
+               }
+                else if(board[i][j] == 0 && lives ==3)
+                {
+                    board[i][j] = 2;
+                }
+                
+            }
+        }
+        for(int i = 0; i < length; i++)
+        {
+            for(int j =0 ; j < columns ; j++)
+            {
+                board[i][j] = board[i][j] >> 1;
+            }
+        }
+    }
+    
+    public int CountNumberOfLives(int[][]board, int i, int j, int length, int columns)
+    {
+        int lives = 0;
+        //Console.WriteLine($"{board[i][j]} ele");
+        for(int k = Math.Max(i-1, 0) ; k <= Math.Min(i+1, length - 1 ); k++)
+        {
+            for(int l = Math.Max(j-1, 0) ; l <= Math.Min(j+1, columns - 1) ; l++)
+            {
+                //Console.WriteLine(board[k][l]);
+                lives += board[k][l] & 1;
+            }
+        }
+        lives -= board[i][j] & 1;
+            return lives;
+    }
+}
+
 public class Solution {
     
     public void GameOfLife(int[][] board) {
