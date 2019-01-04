@@ -1,3 +1,47 @@
+
+//O(1) space
+
+public class Solution {
+    public int[,] ImageSmoother(int[,] M) {
+        var noOfRows = M.GetLength(0);
+        var noOfColumns = M.GetLength(1);
+        for(int i = 0 ; i < noOfRows; i++)
+        {
+            for(int j = 0 ; j < noOfColumns ; j++)
+            {
+                DeterminePoints(i, j, M, noOfRows, noOfColumns);
+            }
+        }
+        
+        for(int i = 0 ; i < noOfRows; i++)
+        {
+            for(int j = 0 ; j < noOfColumns ; j++)
+            {
+                M[i,j] >>= 8;
+            }
+        }
+        
+        return M;
+    }
+    
+    public void DeterminePoints(int i, int j, int[,] M, int noOfRows, int noOfColumns)
+    {
+        var totalCounter = 0;
+        var validCounter = 0;
+        for(int x = Math.Max(0, i - 1); x <= Math.Min(i+1, noOfRows - 1); x++)
+        {
+            for(int y = Math.Max(0,j - 1) ; y <=Math.Min(j+1, noOfColumns - 1) ; y++)
+            {
+                validCounter += M[x,y] & 0xFF; 
+                totalCounter++;
+            }
+        }
+        M[i,j] |= ((validCounter / totalCounter) << 8);
+    }
+}
+
+
+
 public class Solution {
     public int[,] ImageSmoother(int[,] M) {
         var noOfRows = M.GetLength(0);
