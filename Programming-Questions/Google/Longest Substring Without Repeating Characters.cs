@@ -4,6 +4,32 @@ public class Solution {
             return 0;
         if(string.IsNullOrWhiteSpace(s))
            return 1;
+        int i = 0;
+        int max = -1;
+        var dictionary = new Dictionary<char, int>();
+        for(int j = 0 ; j < s.Length && j < s.Length;j++)
+        {
+            if(dictionary.ContainsKey(s[j]))
+            {
+                i = Math.Max(dictionary[s[j]], i);
+            }
+            max = Math.Max(max, j - i + 1);
+            if(dictionary.ContainsKey(s[j]))
+                dictionary[s[j]] = j + 1;
+            else
+            dictionary.Add(s[j], j + 1);
+        }
+        return max;
+        
+    }
+}
+
+public class Solution {
+    public int LengthOfLongestSubstring(string s) {
+        if(string.IsNullOrWhiteSpace(s) && s == s.Trim())
+            return 0;
+        if(string.IsNullOrWhiteSpace(s))
+           return 1;
         int j = 0;
         int max = -1;
         var dictionary = new HashSet<char>();
