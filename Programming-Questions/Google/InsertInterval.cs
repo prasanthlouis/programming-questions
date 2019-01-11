@@ -11,6 +11,43 @@ public class Solution {
     public List<Interval> Insert(IList<Interval> intervalp, Interval newInterval) {
         int startInterval = -1;
         int endInterval = -1;
+        var interval = intervalp.ToList();
+        var answer = new List<Interval>();
+        int i = 0;
+        while(i < interval.Count() && interval[i].end < newInterval.start)
+        {
+            answer.Add(interval[i]);
+            i++;         
+        }
+        while(i < interval.Count() && interval[i].start <= newInterval.end)
+        {
+            newInterval = new Interval(Math.Min(newInterval.start, interval[i].start), Math.Max(newInterval.end, interval[i].end));
+            i++;
+        }
+        answer.Add(newInterval);
+        while(i < interval.Count())
+        {
+            answer.Add(new Interval(interval[i].start, interval[i].end));
+            i++;
+        }
+        return answer;
+       
+    }
+}
+
+/**
+ * Definition for an interval.
+ * public class Interval {
+ *     public int start;
+ *     public int end;
+ *     public Interval() { start = 0; end = 0; }
+ *     public Interval(int s, int e) { start = s; end = e; }
+ * }
+ */
+public class Solution {
+    public List<Interval> Insert(IList<Interval> intervalp, Interval newInterval) {
+        int startInterval = -1;
+        int endInterval = -1;
         var answer = new List<Interval>();
         var intervals = intervalp.ToList();
         var found = false;
