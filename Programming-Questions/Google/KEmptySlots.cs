@@ -1,3 +1,5 @@
+//Time Complexity = O(n)
+
 public class Solution {
     public int KEmptySlots(int[] flowers, int k) {
         var days = new int[flowers.Count()];
