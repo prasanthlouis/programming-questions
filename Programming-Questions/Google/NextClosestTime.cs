@@ -1,3 +1,4 @@
+//Time Complexity is O(1) because everything is of constant size
 public class Solution {
     public string NextClosestTime(string time) {
         var result = new StringBuilder();
