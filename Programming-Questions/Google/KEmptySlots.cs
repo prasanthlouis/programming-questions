@@ -1,4 +1,5 @@
 //Time Complexity = O(n)
+//Uses sliding window
 
 public class Solution {
     public int KEmptySlots(int[] flowers, int k) {
