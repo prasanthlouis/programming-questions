@@ -1,3 +1,5 @@
+//Time complexity is O(N)
+//Space complexity is O(N)?
 public class Solution {
     public string LicenseKeyFormatting(string S, int K) {
         var sb = new StringBuilder();
