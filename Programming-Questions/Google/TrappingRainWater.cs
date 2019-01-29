@@ -1,3 +1,6 @@
+//Time Complexity = O(n)
+//Space Complexity = O(n)
+
 public class Solution {
     public int Trap(int[] height) {
         if(height.Count() == 0)
