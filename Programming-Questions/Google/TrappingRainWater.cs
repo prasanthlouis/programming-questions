@@ -1,6 +1,8 @@
 //Time Complexity = O(n)
 //Space Complexity = O(n)
 
+//Dynamic Programming
+
 public class Solution {
     public int Trap(int[] height) {
         if(height.Count() == 0)
