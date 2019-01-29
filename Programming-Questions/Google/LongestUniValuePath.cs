@@ -7,6 +7,12 @@
  *     public TreeNode(int x) { val = x; }
  * }
  */
+
+//Time complexity is O(N) because we go through every node once
+//Space complexity is O(H) where H is the height of the tree (Recursion)
+
+
+// Solved with recursion
 public class Solution {
     int longestPath = 0;
     public int LongestUnivaluePath(TreeNode root) {
