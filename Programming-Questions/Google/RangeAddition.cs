@@ -1,3 +1,6 @@
+//Time complexity = O(n + k)
+//SpaceComplexity should be O(1). I could clean this up
+
 public class Solution {
     public int[] GetModifiedArray(int length, int[,] updates) {
         var answer = new int[length];
