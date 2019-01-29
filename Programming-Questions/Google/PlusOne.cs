@@ -1,3 +1,6 @@
+//Time Complexity = O(n)
+//Space complexity = O(n)
+
 //BIt shorter
 public class Solution {
     public int[] PlusOne(int[] digits) {
