@@ -1,3 +1,6 @@
+//Time complexity O(N)
+//Sliding Window
+
 public class Solution {
     public int LengthOfLongestSubstringKDistinct(string s, int k) {
         var dictionary = new Dictionary<char,int>();
