@@ -1,0 +1,38 @@
+Comparison of string depends on the length of the string
+
+O(s) can be faster than O(1) for smaller values
+
+Remember to drop constants
+
+Remember to drop non dominant terms if possible  like N + logN becomes N
+
+Log N runtimes are usually in a binary search where the input becomes half every time. Remember, 
+the number of two's that take to multiple to reach N can be expressed as log.
+
+Recursive is usually branches^depth eg. 2^N because at every level it becomes an extra power of two calls.
+Level 1 = 2^0 1 node
+Level 2 = 2^1 2 nodes
+Level 3 = 2^2 4 nodes
+
+            Access, Search, Insertion and Deletion  Space Complexity
+Array:      O(1)    O(n)    O(n)          O(n)             O(n)         
+Stack       O(n)    O(n)    O(1)          O(1)             O(n)
+Queue       O(n)    O(n)    O(1)          O(1)             O(n)
+SingleLL    O(n)    O(n)    O(1)          O(1)             O(n)
+DoubleLL    O(n)    O(n)    O(1)          O(1)             O(n)
+SkipList
+Hash Table  N/A     O(1)    O(1)           O(1)            O(n)
+BST         O(logn) O(logn) O(logn)       O(logn)          O(n)
+Cartesian
+BT
+RBT
+SplayT
+AVLT        O(logn) O(logn) O(logn)      O(logn)           O(n)
+            //Note: Worst case scenarios are logn as well. BST is n (unbalanced)
+KDT
+
+
+
+
+
+
