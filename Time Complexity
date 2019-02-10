@@ -27,7 +27,7 @@ Cartesian
 BT
 RBT
 SplayT
-AVLT
+AVLT        O(logn) O(logn) O(logn)      O(logn) //Note: Worst case scenarios are logn as well. BST is n (unbalanced)
 KDT
 
 
